@@ -49,7 +49,7 @@ memo欄の使い方は検討中
 |:---|:---|:---|:---|:---|
 |入門UNIXシェルプログラミング―シェルの基礎から学ぶUNIXの世界|JPN||READ||
 |Pythonスタートブック|JPN||READ||
-|入門 Python 3|JPN||READING||
+|入門 Python 3|JPN||UNREAD||
 |リーダブルコード ―より良いコードを書くためのシンプルで実践的なテクニック|JPN||READ||
 
 ## 資格
