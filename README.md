@@ -16,7 +16,7 @@ memo欄の使い方は検討中
 |［試して理解］Linuxのしくみ ～実験と図解で学ぶOSとハードウェアの基礎知識|JPN|True|READ||
 |Webを支える技術 ―― HTTP，URI，HTML，そしてREST|JPN|True|READ||
 |マスタリングTCP/IP 入門編　第5版|JPN|True|READING||
-|CPUの創りかた|JPN||READING||
+|CPUの創りかた|JPN||READ||
 
 ## 運用
 
