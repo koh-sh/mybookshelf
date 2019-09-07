@@ -52,6 +52,7 @@ memo欄の使い方は検討中
 |Pythonスタートブック|JPN||READ||
 |入門 Python 3|JPN||UNREAD||
 |リーダブルコード ―より良いコードを書くためのシンプルで実践的なテクニック|JPN||READ||
+|改訂2版 みんなのGo言語|JPN|True|UNREAD|
 
 ## 資格
 
