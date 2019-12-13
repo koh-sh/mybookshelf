@@ -34,7 +34,7 @@ memo欄の使い方は検討中
 |エンジニアリング組織論への招待 ~不確実性に向き合う思考と組織のリファクタリング|JPN||READ||
 |カイゼン・ジャーニー たった1人からはじめて、「越境」するチームをつくるまで|JPN|True|READ||
 |The DevOps　逆転だ！究極の継続的デリバリー|JPN|True|READ||
-|Accelerate: The Science of Lean Software and DevOps|ENG|True|READING||
+|Accelerate: The Science of Lean Software and DevOps|ENG|True|READ||
 
 
 ## ツール
