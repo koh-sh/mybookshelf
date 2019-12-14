@@ -44,6 +44,7 @@ memo欄の使い方は検討中
 |Serverspec|JPN||READ||
 |Chef実践入門 ~コードによるインフラ構成の自動化|JPN||READ||
 |わかばちゃんと学ぶ Git使い方入門|JPN|True|READ||
+|みんなのDocker/Kubernetes|JPN|True|READING||
 
 ## プログラミング
 
