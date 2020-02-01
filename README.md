@@ -17,7 +17,7 @@ memo欄の使い方は検討中
 |Webを支える技術 ―― HTTP，URI，HTML，そしてREST|JPN|True|READ||
 |マスタリングTCP/IP 入門編　第5版|JPN|True|READ||
 |CPUの創りかた|JPN||READ||
-|DNSがよくわかる教科書|JPN||READING||
+|DNSがよくわかる教科書|JPN||READ||
 
 ## 運用
 
