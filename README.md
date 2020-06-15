@@ -18,7 +18,7 @@ memo欄の使い方は検討中
 |マスタリングTCP/IP 入門編　第5版|JPN|True|READ||
 |CPUの創りかた|JPN||READ||
 |DNSがよくわかる教科書|JPN|True|READ||
-|ネットワークがよくわかる教科書|JPN|True|READING||
+|ネットワークがよくわかる教科書|JPN|True|READ||
 
 ## 運用
 
