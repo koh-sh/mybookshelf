@@ -73,4 +73,4 @@ memo欄の使い方は検討中
 |NAME|LANG|KINDLE|STATUS|MEMO|
 |:---|:---|:---|:---|:---|
 |数学ガールの秘密ノート/ビットとバイナリー|JPN||READ||
-|プログラマの数学|JPN|True|READING||
+|プログラマの数学|JPN|True|READ||
