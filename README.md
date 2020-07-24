@@ -68,9 +68,10 @@ memo欄の使い方は検討中
 |Bronze Oracle Database 11g SQL基礎I編|JPN||UNREAD||
 |徹底攻略 LPIC Level3 303/304 問題集|JPN||READ||
 
-## その他
+## 数学
 
 |NAME|LANG|KINDLE|STATUS|MEMO|
 |:---|:---|:---|:---|:---|
 |数学ガールの秘密ノート/ビットとバイナリー|JPN||READ||
 |プログラマの数学|JPN|True|READ||
+|数学ガールの秘密ノート／やさしい統計|JPN|True|READ||
