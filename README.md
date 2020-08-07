@@ -12,7 +12,7 @@ memo欄の使い方は検討中
 |現場のインフラ屋が教える インフラエンジニアになるための教科書|JPN||READ||
 |UNIXという考え方―その設計思想と哲学|JPN||READ||
 |まんがでわかるLinux　シス管系女子|JPN|True|READ||
-|詳解 システム・パフォーマンス|JPN||READING||
+|詳解 システム・パフォーマンス|JPN||READ||
 |［試して理解］Linuxのしくみ ～実験と図解で学ぶOSとハードウェアの基礎知識|JPN|True|READ||
 |Webを支える技術 ―― HTTP，URI，HTML，そしてREST|JPN|True|READ||
 |マスタリングTCP/IP 入門編　第5版|JPN|True|READ||
