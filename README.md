@@ -47,6 +47,7 @@ memo欄の使い方は検討中
 |Chef実践入門 ~コードによるインフラ構成の自動化|JPN||READ||
 |わかばちゃんと学ぶ Git使い方入門|JPN|True|READ||
 |みんなのDocker/Kubernetes|JPN|True|READ||
+|CircleCI実践入門──CI/CDがもたらす開発速度と品質の両立|JPN||READING||
 
 ## プログラミング
 
