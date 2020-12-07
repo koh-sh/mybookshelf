@@ -86,10 +86,10 @@ memo欄の使い方は検討中
 |数学ガールの秘密ノート／積分を見つめて|JPN|True|READ||
 |数学ガールの秘密ノート／学ぶための対話|JPN|True|READ||
 |数学ガールの秘密ノート／複素数の広がり|JPN|True|READ||
-|Pythonではじめる数学の冒険|JPN||UNREAD||
+|Pythonではじめる数学の冒険|JPN||READING||
 
 ## その他
 
 |NAME|LANG|KINDLE|STATUS|MEMO|
 |:---|:---|:---|:---|:---|
-|SOFT SKILLS　ソフトウェア開発者の人生マニュアル|JPN|True|READING||
+|SOFT SKILLS　ソフトウェア開発者の人生マニュアル|JPN|True|READ||
