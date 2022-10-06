@@ -41,7 +41,7 @@ memo欄の使い方は検討中
 |SREの探求--様々な企業におけるサイトリライアビリティエンジニアリングの導入と実践|JPN|Apple ebook|READING||
 |SINGLE TASK 一点集中術|JPN|Kindle|READ||
 |モノリスからマイクロサービスへ ―モノリスを進化させる実践移行ガイド|JPN|Physical|READ||
-
+|ソフトウェアアーキテクチャの基礎|JPN|Apple ebook|READING||
 
 ## ツール
 
