@@ -20,6 +20,7 @@ memo欄の使い方は検討中
 |DNSがよくわかる教科書|JPN|Kindle|READ||
 |ネットワークがよくわかる教科書|JPN|Kindle|READ||
 |達人が教えるWebパフォーマンスチューニング　〜ISUCONから学ぶ高速化の実践|JPN|Kindle|READ||
+|SQLアンチパターン|JPN|Apple ebook|READING||
 
 ## 運用
 
