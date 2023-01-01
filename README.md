@@ -44,7 +44,7 @@ memo欄の使い方は検討中
 |SINGLE TASK 一点集中術|JPN|Kindle|READ||
 |モノリスからマイクロサービスへ ―モノリスを進化させる実践移行ガイド|JPN|Physical|READ||
 |ソフトウェアアーキテクチャの基礎|JPN|Apple ebook|READ||
-|ソフトウェアアーキテクチャ・ハードパーツ|JPN|Apple ebook|READING||
+|ソフトウェアアーキテクチャ・ハードパーツ|JPN|Apple ebook|READ||
 
 ## ツール
 
