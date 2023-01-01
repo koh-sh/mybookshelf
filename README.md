@@ -67,6 +67,7 @@ memo欄の使い方は検討中
 |改訂2版 みんなのGo言語|JPN|Kindle|READ|
 |プログラミングコンテスト攻略のためのアルゴリズムとデータ構造|JPN|Physical|READ|
 |文系プログラマーのためのPythonで学び直す高校数学|JPN|Physical|READ|
+|実用 Go言語|JPN|Apple ebook|READING||
 
 ## 資格
 
