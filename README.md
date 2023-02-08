@@ -45,6 +45,7 @@ memo欄の使い方は検討中
 |モノリスからマイクロサービスへ ―モノリスを進化させる実践移行ガイド|JPN|Physical|READ||
 |ソフトウェアアーキテクチャの基礎|JPN|Apple ebook|READ||
 |ソフトウェアアーキテクチャ・ハードパーツ|JPN|Apple ebook|READ||
+|オブザーバビリティ・エンジニアリング|JPN|Apple ebook|READING||
 
 ## ツール
 
