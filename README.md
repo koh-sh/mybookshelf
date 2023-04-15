@@ -70,6 +70,11 @@ memo欄の使い方は検討中
 |文系プログラマーのためのPythonで学び直す高校数学|JPN|Physical|READ|
 |実用 Go言語|JPN|Apple ebook|READ||
 
+## マネジメント
+|NAME|LANG|TYPE|STATUS|MEMO|
+|:---|:---|:---|:---|:---|
+|プロジェクトマネジメントの基本が全部わかる本|JPN|Kindle|READ||
+
 ## 資格
 
 |NAME|LANG|TYPE|STATUS|MEMO|
