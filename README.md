@@ -108,3 +108,4 @@ memo欄の使い方は検討中
 |NAME|LANG|TYPE|STATUS|MEMO|
 |:---|:---|:---|:---|:---|
 |SOFT SKILLS　ソフトウェア開発者の人生マニュアル|JPN|Kindle|READ||
+|スタッフエンジニア　マネジメントを超えるリーダーシップ|JPN|Kindle|READING||
