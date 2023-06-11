@@ -46,6 +46,7 @@ memo欄の使い方は検討中
 |ソフトウェアアーキテクチャの基礎|JPN|Apple ebook|READ||
 |ソフトウェアアーキテクチャ・ハードパーツ|JPN|Apple ebook|READ||
 |オブザーバビリティ・エンジニアリング|JPN|Apple ebook|READ||
+|チームトポロジー　価値あるソフトウェアをすばやく届ける適応型組織設計|JPN|Kindle|READING||
 
 ## ツール
 
