@@ -72,7 +72,7 @@ memo欄の使い方は検討中
 |プログラミングコンテスト攻略のためのアルゴリズムとデータ構造|JPN|Physical|READ|
 |文系プログラマーのためのPythonで学び直す高校数学|JPN|Physical|READ|
 |実用 Go言語|JPN|Apple ebook|READ||
-|Go言語プログラミングエッセンス エンジニア選書|JPN|Kindle|READING||
+|Go言語プログラミングエッセンス エンジニア選書|JPN|Kindle|READ||
 
 ## マネジメント
 |NAME|LANG|TYPE|STATUS|MEMO|
