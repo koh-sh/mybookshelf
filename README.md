@@ -22,6 +22,7 @@ memo欄の使い方は検討中
 |達人が教えるWebパフォーマンスチューニング　〜ISUCONから学ぶ高速化の実践|JPN|Kindle|READ||
 |SQLアンチパターン|JPN|Apple ebook|READ||
 |systemdの思想と機能　Linuxを支えるシステム管理のためのソフトウェアスイート Software Design plus|JPN|Kindle|READING||
+|体系的に学ぶ 安全なWebアプリケーションの作り方|JPN|Kindle|UNREAD||
 
 ## 運用
 
