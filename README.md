@@ -52,6 +52,7 @@ memo欄の使い方は検討中
 |チームトポロジー　価値あるソフトウェアをすばやく届ける適応型組織設計|JPN|Kindle|READ||
 |Googleのソフトウェアエンジニアリング|JPN|Apple ebook|READ||
 |システム設計の面接試験|JPN|Kindle|READ||
+|ソフトウェアアーキテクチャメトリクス|JPN|Kindle|READING||
 
 ## ツール
 
