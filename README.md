@@ -24,6 +24,7 @@ memo欄の使い方は検討中
 |systemdの思想と機能　Linuxを支えるシステム管理のためのソフトウェアスイート Software Design plus|JPN|Kindle|READ||
 |体系的に学ぶ 安全なWebアプリケーションの作り方|JPN|Kindle|READ||
 |Kubernetesの知識地図 —— 現場での基礎から本番運用まで|JPN|Kindle|READING||
+|入門 eBPF|JPN|Kindle|READING||
 
 ## 運用
 
