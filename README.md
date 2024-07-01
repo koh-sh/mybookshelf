@@ -80,6 +80,7 @@ memo欄の使い方は検討中
 |実用 Go言語|JPN|Apple ebook|READ||
 |Go言語プログラミングエッセンス エンジニア選書|JPN|Kindle|READ||
 |1冊ですべて身につくJavaScript入門講座|JPN|Kindle|READ||
+|Goならわかるシステムプログラミング|JPN|Kindle|READING||
 
 ## マネジメント
 |NAME|LANG|TYPE|STATUS|MEMO|
