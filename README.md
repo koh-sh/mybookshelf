@@ -55,6 +55,7 @@ memo欄の使い方は検討中
 |システム設計の面接試験|JPN|Kindle|READ||
 |ソフトウェアアーキテクチャメトリクス|JPN|Kindle|READ||
 |Clean Architecture　達人に学ぶソフトウェアの構造と設計|JPN|Kindle|READ||
+|アーキテクトの教科書 価値を生むソフトウェアのアーキテクチャ構築|JPN|Kindle|READING||
 
 ## ツール
 
