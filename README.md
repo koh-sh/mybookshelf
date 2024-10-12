@@ -56,7 +56,7 @@ memo欄の使い方は検討中
 |ソフトウェアアーキテクチャメトリクス|JPN|Kindle|READ||
 |Clean Architecture　達人に学ぶソフトウェアの構造と設計|JPN|Kindle|READ||
 |アーキテクトの教科書 価値を生むソフトウェアのアーキテクチャ構築|JPN|Kindle|READ||
-|スタッフエンジニアの道 ―優れた技術専門職になるためのガイド|JPN|Kindle|READING||
+|スタッフエンジニアの道 ―優れた技術専門職になるためのガイド|JPN|Kindle|READ||
 
 ## ツール
 
