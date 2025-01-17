@@ -83,7 +83,7 @@ memo欄の使い方は検討中
 |Go言語プログラミングエッセンス エンジニア選書|JPN|Kindle|READ||
 |1冊ですべて身につくJavaScript入門講座|JPN|Kindle|READ||
 |Goならわかるシステムプログラミング|JPN|Kindle|READ||
-|脳に収まるコードの書き方|JPN|Kindle|READING||
+|脳に収まるコードの書き方|JPN|Kindle|READ||
 
 ## マネジメント
 |NAME|LANG|TYPE|STATUS|MEMO|
