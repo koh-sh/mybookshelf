@@ -84,7 +84,7 @@ memo欄の使い方は検討中
 |1冊ですべて身につくJavaScript入門講座|JPN|Kindle|READ||
 |Goならわかるシステムプログラミング|JPN|Kindle|READ||
 |脳に収まるコードの書き方|JPN|Kindle|READ||
-|Tidy First?|JPN|Kindle|READING||
+|Tidy First?|JPN|Kindle|READ||
 
 
 ## マネジメント
