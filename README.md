@@ -133,4 +133,4 @@ memo欄の使い方は検討中
 |技術者のためのテクニカルライティング入門講座|JPN|Kindle|READ||
 |プロダクトマネジメントのすべて 事業戦略・IT開発・UXデザイン・マーケティングからチーム・組織運営まで|JPN|Kindle|READ||
 |ストーリーとしての競争戦略|JPN|Kindle|READ||
-|LLMのプロンプトエンジニアリング|JPN|Kindle|READING||
+|LLMのプロンプトエンジニアリング|JPN|Kindle|READ||
