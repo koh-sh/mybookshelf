@@ -1,12 +1,12 @@
 # mybookshelf
 
-購入した本を一覧化する。  
+購入した本を一覧化する。
 
 ## 📚 システム基盤・インフラ
 
 |NAME|LANG|TYPE|STATUS|MEMO|
 |:---|:---|:---|:---|:---|
-|リレーショナルデータベース入門―データモデル・SQL・管理システム |JPN|Kindle|UNREAD||
+|リレーショナルデータベース入門―データモデル・SQL・管理システム|JPN|Kindle|UNREAD||
 |現場のインフラ屋が教える インフラエンジニアになるための教科書|JPN|Physical|READ||
 |UNIXという考え方―その設計思想と哲学|JPN|Physical|READ||
 |まんがでわかるLinux　シス管系女子|JPN|Kindle|READ||

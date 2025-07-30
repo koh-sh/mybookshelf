@@ -1,0 +1,96 @@
+#!/usr/bin/env python3
+import argparse
+from bookshelf_core import load_books, save_books, find_book_by_name, create_book, remove_book_by_name
+
+class BookshelfManager:
+    
+    def add_book(self, name: str, category: str = "", lang: str = "JPN", 
+                 book_type: str = "Kindle", status: str = "UNREAD", memo: str = ""):
+        """本を追加"""
+        books = load_books()
+        
+        # 重複チェック
+        if any(book['NAME'] == name for book in books):
+            print(f"エラー: '{name}' は既に登録されています")
+            return False
+        
+        new_book = create_book(name, category, lang, book_type, status, memo)
+        books.append(new_book)
+        save_books(books)
+        print(f"追加しました: {name}")
+        return True
+    
+    def update_status(self, name_part: str, new_status: str):
+        """本のステータスを更新"""
+        books, matches = find_book_by_name(name_part)
+        
+        if not matches:
+            print(f"エラー: '{name_part}' を含む本が見つかりません")
+            return False
+        
+        if len(matches) > 1:
+            print(f"複数の本が見つかりました:")
+            for i, book in enumerate(matches):
+                print(f"  {i+1}. {book['NAME']}")
+            return False
+        
+        # 元のリストで更新
+        for book in books:
+            if book['NAME'] == matches[0]['NAME']:
+                book['STATUS'] = new_status
+                break
+        
+        save_books(books)
+        print(f"更新しました: {matches[0]['NAME']} → {new_status}")
+        return True
+    
+    def remove_book(self, name_part: str):
+        """本を削除"""
+        success, message = remove_book_by_name(name_part)
+        print(message)
+        return success
+    
+
+def main():
+    parser = argparse.ArgumentParser(description='Bookshelf CLI Tool')
+    subparsers = parser.add_subparsers(dest='command', help='利用可能なコマンド')
+    
+    # add コマンド
+    add_parser = subparsers.add_parser('add', help='本を追加')
+    add_parser.add_argument('name', help='本のタイトル')
+    add_parser.add_argument('--category', default='', help='カテゴリ')
+    add_parser.add_argument('--lang', default='JPN', help='言語')
+    add_parser.add_argument('--type', default='Kindle', help='本の種類')
+    
+    # start コマンド
+    start_parser = subparsers.add_parser('start', help='読み始める (UNREAD → READING)')
+    start_parser.add_argument('name', help='本のタイトル（部分一致）')
+    
+    # finish コマンド
+    finish_parser = subparsers.add_parser('finish', help='読み終える (READING → READ)')
+    finish_parser.add_argument('name', help='本のタイトル（部分一致）')
+    
+    # remove コマンド
+    remove_parser = subparsers.add_parser('remove', help='本を削除')
+    remove_parser.add_argument('name', help='本のタイトル（部分一致）')
+    
+    
+    args = parser.parse_args()
+    
+    if not args.command:
+        parser.print_help()
+        return
+    
+    manager = BookshelfManager()
+    
+    if args.command == 'add':
+        manager.add_book(args.name, args.category, args.lang, args.type)
+    elif args.command == 'start':
+        manager.update_status(args.name, 'READING')
+    elif args.command == 'finish':
+        manager.update_status(args.name, 'READ')
+    elif args.command == 'remove':
+        manager.remove_book(args.name)
+
+if __name__ == "__main__":
+    main()
