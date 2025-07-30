@@ -3,8 +3,7 @@
 Bookshelf Core - 共通機能を提供するモジュール
 """
 import csv
-import os
-from typing import List, Dict
+from typing import List, Dict, Tuple
 from pathlib import Path
 
 # プロジェクトルートディレクトリ
@@ -32,7 +31,7 @@ CATEGORY_ORDER = [
     ('学習・資格', '📖'),
 ]
 
-def load_books() -> List[Dict]:
+def load_books() -> List[Dict[str, str]]:
     """CSVから本のデータを読み込み"""
     try:
         with open(BOOKS_CSV, 'r', encoding='utf-8') as f:
@@ -40,7 +39,7 @@ def load_books() -> List[Dict]:
     except FileNotFoundError:
         return []
 
-def save_books(books: List[Dict]):
+def save_books(books: List[Dict[str, str]]) -> None:
     """本のデータをCSVに保存"""
     if not books:
         return
@@ -53,7 +52,7 @@ def save_books(books: List[Dict]):
         writer.writeheader()
         writer.writerows(books)
 
-def find_book_by_name(name_part: str) -> tuple[List[Dict], List[Dict]]:
+def find_book_by_name(name_part: str) -> Tuple[List[Dict[str, str]], List[Dict[str, str]]]:
     """
     名前の部分一致で本を検索
     Returns: (全ての本のリスト, マッチした本のリスト)
@@ -63,7 +62,7 @@ def find_book_by_name(name_part: str) -> tuple[List[Dict], List[Dict]]:
     return books, matches
 
 def create_book(name: str, category: str = "", lang: str = "JPN", 
-               book_type: str = "Kindle", status: str = "UNREAD", memo: str = "") -> Dict:
+               book_type: str = "Kindle", status: str = "UNREAD", memo: str = "") -> Dict[str, str]:
     """本のデータ構造を作成"""
     return {
         'NAME': name,
@@ -74,7 +73,7 @@ def create_book(name: str, category: str = "", lang: str = "JPN",
         'MEMO': memo
     }
 
-def remove_book_by_name(name_part: str) -> tuple[bool, str]:
+def remove_book_by_name(name_part: str) -> Tuple[bool, str]:
     """
     名前の部分一致で本を削除
     Returns: (成功フラグ, メッセージ)

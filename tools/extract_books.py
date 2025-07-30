@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 import re
-from bookshelf_core import save_books, FIELDNAMES, README_MD
+from typing import List, Dict
+from bookshelf_core import save_books, README_MD
 
-def extract_books_from_readme():
+def extract_books_from_readme() -> None:
     """現在のREADME.mdから本の情報を抽出してCSVに変換"""
     with open(README_MD, 'r', encoding='utf-8') as f:
         content = f.read()
     
-    books = []
+    books: List[Dict[str, str]] = []
     current_category = ""
     
     # カテゴリとテーブル行を抽出

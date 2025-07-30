@@ -1,22 +1,23 @@
 #!/usr/bin/env python3
 from collections import defaultdict
+from typing import List, Dict
 from bookshelf_core import load_books, CATEGORY_ORDER, README_MD
 
-def generate_readme():
+def generate_readme() -> None:
     """books.csvから元の形式のREADME.mdを生成"""
     
     # CSVを読み込み
     books = load_books()
     
     # カテゴリ別にグループ化
-    categories = defaultdict(list)
+    categories: defaultdict[str, List[Dict[str, str]]] = defaultdict(list)
     for book in books:
         categories[book['CATEGORY']].append(book)
     
     category_order = CATEGORY_ORDER
     
     # README.md生成
-    content = []
+    content: List[str] = []
     content.append("# mybookshelf")
     content.append("")
     content.append("購入した本を一覧化する。")
