@@ -1,33 +1,19 @@
 #!/usr/bin/env python3
-import csv
 from collections import defaultdict
+from bookshelf_core import load_books, CATEGORY_ORDER, README_MD
 
 def generate_readme():
     """books.csvから元の形式のREADME.mdを生成"""
     
     # CSVを読み込み
-    with open('../data/books.csv', 'r', encoding='utf-8') as f:
-        reader = csv.DictReader(f)
-        books = list(reader)
+    books = load_books()
     
     # カテゴリ別にグループ化
     categories = defaultdict(list)
     for book in books:
         categories[book['CATEGORY']].append(book)
     
-    # カテゴリの表示順序と絵文字のマッピング
-    category_order = [
-        ('システム基盤・インフラ', '📚'),
-        ('プログラミング・開発', '💻'),
-        ('設計・品質', '🏗️'),
-        ('運用・SRE・DevOps', '🔧'),
-        ('セキュリティ・テスト', '🔒'),
-        ('組織・マネジメント', '👥'),
-        ('キャリア・スキル', '🚀'),
-        ('数学・アルゴリズム', '🧮'),
-        ('AI', '🤖'),
-        ('学習・資格', '📖'),
-    ]
+    category_order = CATEGORY_ORDER
     
     # README.md生成
     content = []
@@ -56,7 +42,7 @@ def generate_readme():
             content.append("")
     
     # ファイルに書き出し
-    with open('../README.md', 'w', encoding='utf-8') as f:
+    with open(README_MD, 'w', encoding='utf-8') as f:
         f.write('\n'.join(content))
     
     total_books = len(books)

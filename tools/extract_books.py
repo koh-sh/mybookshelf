@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 import re
-import csv
+from bookshelf_core import save_books, FIELDNAMES, README_MD
 
 def extract_books_from_readme():
     """現在のREADME.mdから本の情報を抽出してCSVに変換"""
-    with open('../README.md', 'r', encoding='utf-8') as f:
+    with open(README_MD, 'r', encoding='utf-8') as f:
         content = f.read()
     
     books = []
@@ -31,12 +31,8 @@ def extract_books_from_readme():
                     'MEMO': parts[4] if len(parts) > 4 else ''
                 })
     
-    # CSVに書き出し
-    with open('../data/books.csv', 'w', newline='', encoding='utf-8') as f:
-        writer = csv.DictWriter(f, fieldnames=['NAME', 'CATEGORY', 'LANG', 'TYPE', 'STATUS', 'MEMO'])
-        writer.writeheader()
-        writer.writerows(books)
-    
+    # CSVに保存
+    save_books(books)
     print(f"抽出完了: {len(books)}冊の本をdata/books.csvに保存しました")
 
 if __name__ == "__main__":

@@ -1,59 +1,28 @@
 #!/usr/bin/env python3
-import csv
 import argparse
-from typing import List, Dict
+from bookshelf_core import load_books, save_books, find_book_by_name, create_book, remove_book_by_name
 
 class BookshelfManager:
-    def __init__(self, csv_file='data/books.csv'):
-        self.csv_file = csv_file
-        
-    def load_books(self) -> List[Dict]:
-        """CSVから本のデータを読み込み"""
-        try:
-            with open(self.csv_file, 'r', encoding='utf-8') as f:
-                return list(csv.DictReader(f))
-        except FileNotFoundError:
-            return []
-    
-    def save_books(self, books: List[Dict]):
-        """本のデータをCSVに保存"""
-        if not books:
-            return
-        
-        fieldnames = ['NAME', 'CATEGORY', 'LANG', 'TYPE', 'STATUS', 'MEMO']
-        with open(self.csv_file, 'w', newline='', encoding='utf-8') as f:
-            writer = csv.DictWriter(f, fieldnames=fieldnames)
-            writer.writeheader()
-            writer.writerows(books)
     
     def add_book(self, name: str, category: str = "", lang: str = "JPN", 
                  book_type: str = "Kindle", status: str = "UNREAD", memo: str = ""):
         """本を追加"""
-        books = self.load_books()
+        books = load_books()
         
         # 重複チェック
         if any(book['NAME'] == name for book in books):
             print(f"エラー: '{name}' は既に登録されています")
             return False
         
-        new_book = {
-            'NAME': name,
-            'CATEGORY': category,
-            'LANG': lang,
-            'TYPE': book_type,
-            'STATUS': status,
-            'MEMO': memo
-        }
-        
+        new_book = create_book(name, category, lang, book_type, status, memo)
         books.append(new_book)
-        self.save_books(books)
+        save_books(books)
         print(f"追加しました: {name}")
         return True
     
     def update_status(self, name_part: str, new_status: str):
         """本のステータスを更新"""
-        books = self.load_books()
-        matches = [book for book in books if name_part.lower() in book['NAME'].lower()]
+        books, matches = find_book_by_name(name_part)
         
         if not matches:
             print(f"エラー: '{name_part}' を含む本が見つかりません")
@@ -65,10 +34,21 @@ class BookshelfManager:
                 print(f"  {i+1}. {book['NAME']}")
             return False
         
-        matches[0]['STATUS'] = new_status
-        self.save_books(books)
+        # 元のリストで更新
+        for book in books:
+            if book['NAME'] == matches[0]['NAME']:
+                book['STATUS'] = new_status
+                break
+        
+        save_books(books)
         print(f"更新しました: {matches[0]['NAME']} → {new_status}")
         return True
+    
+    def remove_book(self, name_part: str):
+        """本を削除"""
+        success, message = remove_book_by_name(name_part)
+        print(message)
+        return success
     
 
 def main():
@@ -90,6 +70,10 @@ def main():
     finish_parser = subparsers.add_parser('finish', help='読み終える (READING → READ)')
     finish_parser.add_argument('name', help='本のタイトル（部分一致）')
     
+    # remove コマンド
+    remove_parser = subparsers.add_parser('remove', help='本を削除')
+    remove_parser.add_argument('name', help='本のタイトル（部分一致）')
+    
     
     args = parser.parse_args()
     
@@ -105,6 +89,8 @@ def main():
         manager.update_status(args.name, 'READING')
     elif args.command == 'finish':
         manager.update_status(args.name, 'READ')
+    elif args.command == 'remove':
+        manager.remove_book(args.name)
 
 if __name__ == "__main__":
     main()
