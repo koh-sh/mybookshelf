@@ -87,6 +87,7 @@ memo欄の使い方は検討中
 |脳に収まるコードの書き方|JPN|Kindle|READ||
 |Tidy First?|JPN|Kindle|READ||
 |Good Code, Bad Code ～持続可能な開発のためのソフトウェアエンジニア的思考|JPN|Kindle|READ||
+|オブジェクト指向設計実践ガイド|JPN|Kindle|READING||
 
 
 ## マネジメント
