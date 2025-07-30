@@ -77,9 +77,9 @@ memo欄の使い方は検討中
 |Pythonスタートブック|JPN|Physical|READ||
 |入門 Python 3|JPN|Physical|UNREAD||
 |リーダブルコード ―より良いコードを書くためのシンプルで実践的なテクニック|JPN|Physical|READ||
-|改訂2版 みんなのGo言語|JPN|Kindle|READ|
-|プログラミングコンテスト攻略のためのアルゴリズムとデータ構造|JPN|Physical|READ|
-|文系プログラマーのためのPythonで学び直す高校数学|JPN|Physical|READ|
+|改訂2版 みんなのGo言語|JPN|Kindle|READ||
+|プログラミングコンテスト攻略のためのアルゴリズムとデータ構造|JPN|Physical|READ||
+|文系プログラマーのためのPythonで学び直す高校数学|JPN|Physical|READ||
 |実用 Go言語|JPN|Apple ebook|READ||
 |Go言語プログラミングエッセンス エンジニア選書|JPN|Kindle|READ||
 |1冊ですべて身につくJavaScript入門講座|JPN|Kindle|READ||
@@ -89,8 +89,8 @@ memo欄の使い方は検討中
 |Good Code, Bad Code ～持続可能な開発のためのソフトウェアエンジニア的思考|JPN|Kindle|READ||
 |オブジェクト指向設計実践ガイド|JPN|Kindle|READING||
 
-
 ## マネジメント
+
 |NAME|LANG|TYPE|STATUS|MEMO|
 |:---|:---|:---|:---|:---|
 |プロジェクトマネジメントの基本が全部わかる本|JPN|Kindle|READ||
