@@ -18,10 +18,13 @@ mybookshelf/
 ├── data/
 │   └── books.csv         # Master data store (87+ books)
 └── tools/
-    ├── bookshelf_core.py # Shared functionality module
-    ├── bookshelf         # Main CLI tool (executable)
-    ├── extract_books.py  # One-time migration utility
-    └── generate_readme.py # README generator
+    ├── bookshelf_core.py     # Shared functionality module
+    ├── bookshelf             # Main CLI tool (executable)
+    ├── extract_books.py      # One-time migration utility
+    ├── generate_readme.py    # README generator
+    ├── test_bookshelf.py     # Comprehensive automated test suite
+    ├── TEST_SPECIFICATION.md # Test documentation
+    └── TEST_USAGE.md         # Test usage guide
 ```
 
 ### Data Structure
@@ -88,18 +91,30 @@ cd tools && python generate_readme.py
 ### Utilities
 - `extract_books.py`: One-time migration from old README format
 - `generate_readme.py`: Automated README.md generation with category organization
+- `test_bookshelf.py`: Comprehensive test suite with 10 automated test cases
 
 ## Development Commands
 
-### Testing New Features
+### Running Tests
 ```bash
-# Test CLI functionality
+# Run comprehensive automated test suite (recommended)
+cd tools && python test_bookshelf.py
+
+# Test specific CLI functionality manually
 ./tools/bookshelf add "Test Book" --category "AI"
 ./tools/bookshelf start "Test Book"
-./tools/bookshelf remove "Test Book"  # Clean up after testing
+./tools/bookshelf remove "Test Book"
 
 # Regenerate display
 cd tools && python generate_readme.py
+```
+
+### Type Checking and Code Quality
+All Python files are type-safe with complete Pylance compatibility:
+```bash
+# Files are already type-annotated with proper hints
+# No additional type checking commands needed
+cd tools && python -m py_compile *.py  # Syntax verification
 ```
 
 ### Maintenance
@@ -107,6 +122,7 @@ cd tools && python generate_readme.py
 - All relative paths are managed through `bookshelf_core.py` constants
 - Category definitions and emoji mappings are centralized
 - Code follows DRY principles with shared functionality
+- Run automated tests before major commits: `cd tools && python test_bookshelf.py`
 
 ## Important Notes
 
@@ -115,5 +131,19 @@ cd tools && python generate_readme.py
 - **Git Workflow**: Commit both data and display files together
 - **Extensibility**: Add new categories by updating `CATEGORY_ORDER` in `bookshelf_core.py`
 - **Performance**: Handles 87+ books efficiently with simple file operations
+- **Type Safety**: All Python files use proper type annotations compatible with Pylance
+- **Test Coverage**: Comprehensive test suite covers all CLI operations and error cases
+- **Test Data Safety**: Tests use unique identifiers and automatically clean up test data
+
+## Testing Architecture
+
+The repository includes a comprehensive automated test suite (`test_bookshelf.py`) that validates:
+- CLI help and command functionality  
+- Book addition, status updates, and removal
+- Error handling for duplicates and missing books
+- Data consistency between CSV and README
+- Automatic cleanup to prevent test data pollution
+
+Tests run in ~10-15 seconds and verify all 10 core functionalities. See `TEST_SPECIFICATION.md` and `TEST_USAGE.md` for detailed documentation.
 
 When working with this repository, always use the CLI tools rather than manual file editing to ensure data consistency and proper formatting.
