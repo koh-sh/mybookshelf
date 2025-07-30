@@ -6,7 +6,7 @@ def generate_readme():
     """books.csvから元の形式のREADME.mdを生成"""
     
     # CSVを読み込み
-    with open('books.csv', 'r', encoding='utf-8') as f:
+    with open('../data/books.csv', 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
         books = list(reader)
     
@@ -56,7 +56,7 @@ def generate_readme():
             content.append("")
     
     # ファイルに書き出し
-    with open('README.md', 'w', encoding='utf-8') as f:
+    with open('../README.md', 'w', encoding='utf-8') as f:
         f.write('\n'.join(content))
     
     total_books = len(books)
