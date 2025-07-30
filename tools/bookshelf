@@ -70,37 +70,6 @@ class BookshelfManager:
         print(f"更新しました: {matches[0]['NAME']} → {new_status}")
         return True
     
-    def list_books(self, category: str = "", status: str = ""):
-        """本の一覧表示"""
-        books = self.load_books()
-        
-        if category:
-            books = [book for book in books if book['CATEGORY'] == category]
-        
-        if status:
-            books = [book for book in books if book['STATUS'] == status]
-        
-        if not books:
-            print("該当する本がありません")
-            return
-        
-        print(f"{'NAME':<50} {'CATEGORY':<20} {'STATUS':<10}")
-        print("-" * 80)
-        for book in books:
-            print(f"{book['NAME']:<50} {book['CATEGORY']:<20} {book['STATUS']:<10}")
-    
-    def search_books(self, query: str):
-        """本を検索"""
-        books = self.load_books()
-        matches = [book for book in books if query.lower() in book['NAME'].lower()]
-        
-        if not matches:
-            print(f"'{query}' を含む本が見つかりません")
-            return
-        
-        print(f"'{query}' の検索結果:")
-        for book in matches:
-            print(f"  {book['NAME']} ({book['CATEGORY']}, {book['STATUS']})")
 
 def main():
     parser = argparse.ArgumentParser(description='Bookshelf CLI Tool')
@@ -121,14 +90,6 @@ def main():
     finish_parser = subparsers.add_parser('finish', help='読み終える (READING → READ)')
     finish_parser.add_argument('name', help='本のタイトル（部分一致）')
     
-    # list コマンド
-    list_parser = subparsers.add_parser('list', help='本の一覧表示')
-    list_parser.add_argument('--category', help='カテゴリでフィルタ')
-    list_parser.add_argument('--status', help='ステータスでフィルタ')
-    
-    # search コマンド
-    search_parser = subparsers.add_parser('search', help='本を検索')
-    search_parser.add_argument('query', help='検索クエリ')
     
     args = parser.parse_args()
     
@@ -144,10 +105,6 @@ def main():
         manager.update_status(args.name, 'READING')
     elif args.command == 'finish':
         manager.update_status(args.name, 'READ')
-    elif args.command == 'list':
-        manager.list_books(args.category, args.status)
-    elif args.command == 'search':
-        manager.search_books(args.query)
 
 if __name__ == "__main__":
     main()
