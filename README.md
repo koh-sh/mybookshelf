@@ -103,6 +103,7 @@
 |プロダクトマネジメントのすべて 事業戦略・IT開発・UXデザイン・マーケティングからチーム・組織運営まで|JPN|Kindle|READ||
 |ストーリーとしての競争戦略|JPN|Kindle|READ||
 |SINGLE TASK 一点集中術|JPN|Kindle|READ||
+|エンジニアリングリーダー|JPN|Kindle|READING||
 
 ## 🧮 数学・アルゴリズム
 
