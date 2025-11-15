@@ -43,7 +43,7 @@
 |脳に収まるコードの書き方|JPN|Kindle|READ||
 |Tidy First?|JPN|Kindle|READ||
 |Good Code, Bad Code ～持続可能な開発のためのソフトウェアエンジニア的思考|JPN|Kindle|READ||
-|オブジェクト指向設計実践ガイド|JPN|Kindle|READING||
+|オブジェクト指向設計実践ガイド|JPN|Kindle|READ||
 |SQLアンチパターン|JPN|Apple ebook|READ||
 |モノリスからマイクロサービスへ ―モノリスを進化させる実践移行ガイド|JPN|Physical|READ||
 |ソフトウェアアーキテクチャの基礎|JPN|Apple ebook|READ||
