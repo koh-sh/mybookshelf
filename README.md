@@ -104,6 +104,7 @@
 |ストーリーとしての競争戦略|JPN|Kindle|READ||
 |SINGLE TASK 一点集中術|JPN|Kindle|READ||
 |エンジニアリングリーダー|JPN|Kindle|READING||
+|ＩＴエンジニアの転職学　２万人の選択から見えた、後悔しないキャリア戦略|JPN|Kindle|READING||
 
 ## 🧮 数学・アルゴリズム
 
