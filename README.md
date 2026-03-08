@@ -53,6 +53,7 @@
 |Clean Architecture　達人に学ぶソフトウェアの構造と設計|JPN|Kindle|READ||
 |アーキテクトの教科書 価値を生むソフトウェアのアーキテクチャ構築|JPN|Kindle|READ||
 |Googleのソフトウェアエンジニアリング|JPN|Apple ebook|READ||
+|ドメイン駆動設計をはじめよう|JPN|Kindle|READING||
 
 ## 🔧 運用・SRE・DevOps
 
